@@ -99,3 +99,4 @@ Mô hình hạt nhân sử dụng kiến trúc kết hợp:
 ---
 
 ## Cấu trúc File Dự án 📁
+/PBL_Project/ ├── DATA/ │ └── RawVideo/ │ ├── Abuse/ │ ├── ... (13 thư mục lớp bất thường) │ └── Normal/ ├── data_clips/ │ ├── train/ # ~33k clips 5s (nhãn yếu) │ └── test/ # ~4.5k clips sạch (nhãn mạnh) ├── Action_Regnition_splits/ # File chia train/test gốc │ └── train_001.txt ├── .gitignore # Bỏ qua file .pth, .zip, venv... ├── PBL_Kaggle_Training.ipynb # Notebook huấn luyện (Kaggle/Colab) ├── prepare_data.py # Script cắt tập test ├── prepare_train_data_SLIDING_WINDOW.py # Script cắt tập train ├── predict.py # Script chạy dự đoán ├── requirements.txt # (Nên tạo) Danh sách thư viện └── README.md # File này
